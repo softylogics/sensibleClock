@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bicycle">on bycycle</string>
+    <string name="foot">on foot</string>
+    <string name="running">running</string>
+    <string name="still">still</string>
+    <string name="tilting">tilting</string>
+    <string name="walking">walking</string>
+    <string name="vehicle">in vehicle</string>
+    <string name="unknown_activity">unknown</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayout"
+    android:layout_height="match_parent"
+    tools:context="sensibleclock.softylogic.com.sensibleclock.MainActivity">
+
+    <TextView
+        android:id="@+id/selectMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Minutes:"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/digitalClock"
+        android:layout_alignEnd="@+id/digitalClock" />
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="00:00"
+        android:textSize="50sp"
+        android:layout_below="@+id/selectMinutes"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_below="@+id/countdown"
+        android:layout_centerHorizontal="true" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_alignBottom="@+id/selectMinutes"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/selectMinutes" />
+
+    <TextView
+        android:id="@+id/userEngagingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="In this boring lecture, you can either play tic toe with your friend or you can read a novel. Novel is better option as it will increase your reading skills as well as yor vocabulary"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/startButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+    <DigitalClock
+        android:layout_width="wrap_content"
+        android:id="@+id/digitalClock"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/lblDigitalClock"
+        android:layout_alignLeft="@+id/startButton"
+        android:layout_alignStart="@+id/startButton" />
+
+    <TextView
+        android:id="@+id/lblDigitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Digital Clock"
+        android:layout_below="@+id/userEngagingText"
+        android:layout_toLeftOf="@+id/digitalClock"
+        android:layout_toStartOf="@+id/digitalClock"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        android:id="@+id/btnCoarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Coarse Idea"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/startButton"
+        android:layout_alignEnd="@+id/startButton" />
+
+    <TextView
+        android:id="@+id/lblCoarsebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCoarse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Press this Button to Get a Coarse Idea of Time"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
